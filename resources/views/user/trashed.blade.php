@@ -2,5 +2,9 @@
 
 @section('content')
     <h1>Usuários deletados</h1>
-    @include('user.component.list', ['users' => $users, 'active' => false])
+    @if($users->isNotEmpty())
+        @include('user.component.list', ['users' => $users, 'active' => false])
+    @else
+        <p>Não há usuários deletados.</p>
+    @endif
 @endsection
