@@ -18,10 +18,11 @@ Na raiz do projeto, execute os passos a seguir na ordem em que serão apresentad
 - `composer install`
 - `npm install`
 - `npm run prod`
+- `php artisan key:generate`
 - `php artisan migrate`
 - `php artisan db:seed`
 - `php artisan serve`
-- Acesse no seu browser o endereço http://localhost:8000
+- Acesse no seu browser o endereço http://127.0.0.1:8000
 
 ## Sobre o teste
 
